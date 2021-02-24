@@ -2,13 +2,13 @@
   width: 980px;
   margin: 60px auto;
   padding: 60px;
-  background-color: #fff;
+  background-color: wheat;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
-  float: left;
   width: 50%;
+  display: contents;
 }
 .account-page .account-page__inner:after {
   clear: both;
