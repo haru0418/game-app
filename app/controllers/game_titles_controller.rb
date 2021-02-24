@@ -1,6 +1,7 @@
 class GameTitlesController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   def index
+    @game_title = GameTitle.includes(:user)
   end
 
   def new
