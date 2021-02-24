@@ -1,0 +1,16 @@
+<header class='top-page-header'>
+  <div class='nav'>
+    <ul class='lists-left'>
+      <li><%= link_to 'オンラインゲーム紹介', "#", class: "page-title" %></li>
+    </ul>
+    <ul class='lists-right'>
+      <% if  %>
+        <li><%= link_to 'オンラインゲーム', "#", class: "user-nickname" %></li>
+        <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li>
+      <% else%>
+        <li><%= link_to 'ログイン', "#", class: "login" %></li>
+        <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+      <% end %>
+    </ul>
+  </div>
+</header>
