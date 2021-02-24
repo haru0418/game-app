@@ -1,0 +1,41 @@
+<div class="items-sell-contents">  
+  <div class="items-sell-main">
+    <%= form_with model: @game_title, local: true do |f| %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        オンラインゲーム画像
+      </div>
+      <div class="click-upload">
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+    <div class="new-items">
+      <div class="weight-bold-text">
+        オンラインゲームタイトル
+      </div>
+      <%= f.text_area :game_title, class:"items-text", id:"item-name", placeholder:"タイトル名"  %>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          オンラインゲームの説明
+        </div>
+        <%= f.text_area :game_info, class:"items-text", id:"item-info", placeholder:"おすすめどころ！", maxlength:"2000", rows:"11" %>
+      </div>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          これ買っておけば楽々遊べるPC
+        </div>
+        <%= f.text_area :recommended_pc, class:"items-text", id:"item-info", placeholder:"ゲーミングPC名（PCの名前、スペック詳細）" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+      <div class="weight-bold-text">
+        月額料金
+      </div>
+      <%= f.text_area :monthly_fee, class:"items-text", id:"item-name", placeholder:"月額料金（無料なら無料でOK）", maxlength:"40" %>
+    
+      <div class="sell-btn-contents">
+      <%= f.submit "投稿" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
