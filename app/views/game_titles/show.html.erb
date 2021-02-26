@@ -44,10 +44,10 @@
 </div>
 
 <div class="game_title_comments">
-  <%= form_with local: true do |f|%>
+  <%= form_with(model: [@game_title, @comment], local: true) do |f|%>
     <div class="field">
-      <%= f.label :hoge, "コメント", class: :comment_text %><br />
-      <%= f.text_area :hoge, class: :botan %>
+      <%= f.label :text, "コメント", class: :comment_text %><br />
+      <%= f.text_area :text, class: :botan %>
     </div>
     <div class="actions">
       <%= f.submit "送信する", class: :"comment-btn" %>
