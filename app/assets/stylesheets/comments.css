@@ -1,0 +1,21 @@
+.game_title_comments {
+  text-align: center;
+}
+
+.field {
+  height: 150px;
+}
+
+.botan {
+  height: 70%;
+  width: 50%;
+}
+
+.comment_text {
+  font-size: 20px;
+}
+
+.comment-btn {
+  padding: 10px 40px;
+  background-color: yellow;
+}

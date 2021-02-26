@@ -42,3 +42,22 @@
     </div>
   </div>
 </div>
+
+<div class="game_title_comments">
+  <%= form_with local: true do |f|%>
+    <div class="field">
+      <%= f.label :hoge, "コメント", class: :comment_text %><br />
+      <%= f.text_area :hoge, class: :botan %>
+    </div>
+    <div class="actions">
+      <%= f.submit "送信する", class: :"comment-btn" %>
+    </div>
+  <% end %>
+  
+  <ul class="comments_lists">
+    <li class="comments_list">
+      <%= "#" %>
+      <%= link_to "#", "#", class: :comment_user %>
+    </li>
+  </ul>
+</div>
