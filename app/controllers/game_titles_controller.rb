@@ -36,6 +36,10 @@ class GameTitlesController < ApplicationController
   end
 
   def destroy
+    @game_title = GameTitle.find(params[:id])
+    if @game_title.destroy
+      redirect_to root_path
+    end
   end
 
 
