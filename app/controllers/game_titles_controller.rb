@@ -22,6 +22,20 @@ class GameTitlesController < ApplicationController
     @game_title = GameTitle.find(params[:id])
   end
 
+  def edit
+    @game_title = GameTitle.find(params[:id])
+  end
+
+  def update
+    @game_title = GameTitle.find(params[:id])
+    if @game_title.update(game_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+
 
 
   private
