@@ -1,7 +1,8 @@
 class GameTitlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_game_title, only: [:show, :edit, :update, :destroy]
-  
+  before_action :move_to_index, only: [:edit]
+
   def index
     @game_title = GameTitle.includes(:user)
   end
@@ -50,6 +51,10 @@ class GameTitlesController < ApplicationController
 
   def set_game_title
     @game_title = GameTitle.find(params[:id])
+  end
+
+  def move_to_index
+    redirect_to root_path if @game_title.user_id != current_user.id
   end
 
 end
