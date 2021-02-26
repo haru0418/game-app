@@ -1,5 +1,6 @@
 class GameTitlesController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:index, :show]
+  
   def index
     @game_title = GameTitle.includes(:user)
   end
@@ -16,6 +17,11 @@ class GameTitlesController < ApplicationController
       render :new
     end
   end
+
+  def show
+    @game_title = GameTitle.find(params[:id])
+  end
+
 
 
   private

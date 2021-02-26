@@ -1,0 +1,44 @@
+<%= render "shared/header" %>
+
+<div class="qqqq">
+  <div class="game_title-img">
+    <%= image_tag @game_title.image ,class:"title-box-img" %>
+  </div>
+
+  <% if user_signed_in? %>
+    <% if current_user.id == @game_title.user_id %>
+    <%= link_to "編集", "#", class: "item-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
+    <% end %>
+  <% end %>
+
+  <div class="game-box">
+    <div class="game-title-box">
+      <span class="game-title">
+        <%= @game_title.game_title %>
+      </span>
+    </div>
+
+    <div class="game-info-box">
+      <h1 class="heading"><%= "#{@game_title.game_title}のおすすめポイント！" %></h1>
+      <div class="aaa">
+        <div class="game-description"><%= @game_title.game_info %></div>
+      </div>
+    </div>
+
+    <div class="recommended-pc-box">
+      <h1 class="heading">これ買っておけば楽々遊べるPC名</h1>
+      <div class="aaa">
+        <div class="game-description"><%= @game_title.recommended_pc %></div>
+      </div>
+    </div>
+
+    <div class="monthly-fee-box">
+      <h1 class="heading">月額料金</h1>
+      <div class="aaa">
+        <div class="game-description"><%= @game_title.monthly_fee %></div>
+      </div>
+    </div>
+  </div>
+</div>
