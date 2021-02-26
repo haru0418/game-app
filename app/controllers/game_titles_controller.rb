@@ -35,6 +35,9 @@ class GameTitlesController < ApplicationController
     end
   end
 
+  def destroy
+  end
+
 
 
 
