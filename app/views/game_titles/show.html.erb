@@ -23,22 +23,47 @@
     <div class="game-info-box">
       <h1 class="heading"><%= "#{@game_title.game_title}のおすすめポイント！" %></h1>
       <div class="aaa">
-        <div class="game-description"><%= @game_title.game_info %></div>
+        <div class="game-description"><%= safe_join(@game_title.game_info.split("\n"),tag(:br)) %></div>
       </div>
     </div>
 
     <div class="recommended-pc-box">
       <h1 class="heading">これ買っておけば楽々遊べるPC名</h1>
       <div class="aaa">
-        <div class="game-description"><%= @game_title.recommended_pc %></div>
+        <div class="game-description"><%= safe_join(@game_title.recommended_pc.split("\n"),tag(:br)) %></div>
       </div>
     </div>
 
     <div class="monthly-fee-box">
       <h1 class="heading">月額料金</h1>
       <div class="aaa">
-        <div class="game-description"><%= @game_title.monthly_fee %></div>
+        <div class="game-description"><%= safe_join(@game_title.monthly_fee.split("\n"),tag(:br)) %></div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="game_title_comments">
+  <% if user_signed_in? %>
+  <%= form_with(model: [@game_title, @comment], local: true) do |f|%>
+    <div class="field">
+      <%= f.label :text, "コメント", class: :comment_info %><br />
+      <%= f.text_area :text, class: :botan %>
+    </div>
+    <div class="actions">
+      <%= f.submit "送信する", class: :"comment-btn" %>
+    </div>
+  <% end %>
+  <% else %>
+    <div class="">※コメント機能はサインインしたら利用できます</div>
+  <% end %>
+  
+  <ul class="comments_lists">
+    <% @comments.each do |comment| %>
+    <li class="comments_list">
+      <div class="comment-text"><%= safe_join(comment.text.split("\n"),tag(:br)) %></div>
+      <div><%= "by #{comment.user.nickname}" %></div>
+    </li>
+    <% end %>
+  </ul>
 </div>
