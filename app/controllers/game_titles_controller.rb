@@ -4,7 +4,7 @@ class GameTitlesController < ApplicationController
   before_action :move_to_index, only: [:edit]
 
   def index
-    @game_title = GameTitle.includes(:user)
+    @game_title = GameTitle.includes(:user).order('created_at DESC')
   end
 
   def new
@@ -22,7 +22,7 @@ class GameTitlesController < ApplicationController
 
   def show
     @comment = Comment.new
-    @comments = @game_title.comments.includes(:user)
+    @comments = @game_title.comments.includes(:user).order('created_at DESC')
   end
 
   def edit
