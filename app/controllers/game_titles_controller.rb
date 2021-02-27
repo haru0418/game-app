@@ -58,5 +58,4 @@ class GameTitlesController < ApplicationController
   def move_to_index
     redirect_to root_path if @game_title.user_id != current_user.id
   end
-
 end

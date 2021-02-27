@@ -3,6 +3,10 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     if @comment.save
       redirect_to game_title_path(@comment.game_title)
+    else
+      @game_title = @comment.game_title
+      @comments = @game_title.comments
+      render "game_titles/show"
     end
   end
 
