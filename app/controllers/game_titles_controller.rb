@@ -22,6 +22,7 @@ class GameTitlesController < ApplicationController
 
   def show
     @comment = Comment.new
+    @comments = @game_title.comments.includes(:user)
   end
 
   def edit

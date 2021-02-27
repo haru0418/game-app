@@ -1,17 +1,25 @@
+/* game_title/show */
+
 .game_title_comments {
-  text-align: center;
+  border: 1px solid black;
 }
 
 .field {
   height: 150px;
+  text-align: center;
 }
 
 .botan {
   height: 70%;
   width: 50%;
+  padding: 3px;
 }
 
-.comment_text {
+.actions {
+  text-align: center;
+}
+
+.comment_info {
   font-size: 20px;
 }
 
@@ -19,3 +27,20 @@
   padding: 10px 40px;
   background-color: yellow;
 }
+
+.comments_lists {
+  border: 1px solid black;
+  margin: 10px 50px;
+  background-color: wheat;
+}
+
+.comments_list {
+  border-bottom: 1px solid black;
+  margin: 5px 10px;
+}
+
+.comment-text {
+  word-wrap: break-word;
+}
+
+/* /game_title/show */

@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to game_title(@comment.game_title)
+      redirect_to game_title_path(@comment.game_title)
     end
   end
 
