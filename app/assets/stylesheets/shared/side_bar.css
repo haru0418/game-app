@@ -1,8 +1,5 @@
 .sidebar-type {
   display: inline;
-  justify-content: center;
-  align-items: center;
-  
 }
 
 .said-bar-link {
@@ -10,12 +7,14 @@
   text-align: center;
   font-size: 20px;
   padding: 20px;
-  margin-bottom: 5px;
+  
   background-color: wheat;
+  border: 1px solid teal;
   
 }
 
 .side_bar_name {
   text-decoration: none;
+  color: teal;
 }
 
