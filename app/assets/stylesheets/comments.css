@@ -1,7 +1,7 @@
 /* game_title/show */
 
 .game_title_comments {
-  border: 1px solid black;
+  margin: 100px 100px 0 100px;
 }
 
 .field {
@@ -25,13 +25,16 @@
 
 .comment-btn {
   padding: 10px 40px;
-  background-color: yellow;
+  background-color: teal;
+  color: wheat;
 }
 
 .comments_lists {
   border: 1px solid black;
-  margin: 10px 50px;
+  margin: 20px 50px;
   background-color: wheat;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .comments_list {
