@@ -82,7 +82,7 @@ VSCode
 - has_many :comments, dependent: :destroy
   
   
-## comments テーブル
+# comments テーブル
 
 | Column                 |Type         |Options                    |
 |------------------------|-------------|---------------------------|
@@ -96,7 +96,7 @@ VSCode
 - belongs_to :game_title
 
 
-## users テーブル
+# users テーブル
 
 | Column                 |Type     |Options                    |
 |------------------------|---------|---------------------------|
@@ -105,6 +105,6 @@ VSCode
 
 
 
-### Association
+# Association
 - belongs_to :game_title
 - belongs_to :user
