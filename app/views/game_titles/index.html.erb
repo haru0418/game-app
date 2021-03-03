@@ -17,6 +17,14 @@
         <%= link_to image_tag(game_title.image, class: :card__img), game_title_path(game_title.id) %>
         <div class="card__body">
           <%= link_to game_title.game_title, game_title_path(game_title.id), class: :card__title %>
+          <% if user_signed_in? %>
+          <% if current_user.already_favorited?(game_title) %>
+            <%= link_to 'いいねを外す', game_title_favorites_path(game_title), method: :delete %>
+          <% else %>
+            <%= link_to 'イイね', game_title_favorites_path(game_title), method: :post %>
+          <% end %>
+          <% end %>
+          <%= game_title.favorites.count %>
         </div>
       </div>
       <% end %>
