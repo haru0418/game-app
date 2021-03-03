@@ -9,4 +9,8 @@ class User < ApplicationRecord
   has_many :game_titles
   has_many :comments
   has_many :favorites, dependent: :destroy
+
+  def already_favorited?(game_title)
+    self.favorites.exists?(game_title_id: game_title.id)
+  end
 end
