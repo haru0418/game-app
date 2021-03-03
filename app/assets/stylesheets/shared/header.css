@@ -1,25 +1,31 @@
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  background-color:wheat;
 }
 
 .nav {
   font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   width: 100%;
   padding: 1vh 0;
-  
+}
+
+.lists-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
 }
 
 .lists-right {
   display: flex;
   list-style: none;
-  align-items: flex-end;
+  justify-content: center;
 }
 
 .user-nickname {
@@ -48,6 +54,20 @@
 }
 
 .page-title {
-  font-size: 40px;
+  font-size: 50px;
   text-decoration: none;
+  color:wheat;
+  background-color: teal;
+}
+
+.list-pict {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: violet;
+  
+}
+
+.www {
+  position: relative;
 }

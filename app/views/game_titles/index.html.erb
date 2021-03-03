@@ -1,23 +1,27 @@
 <%= render "shared/header" %>
 
 <div class='item-contents'>
-  <div class='title'>
-    <h1>ピックアップカテゴリー</h1>
+  <div class="sidebar">
+    <%= render "side_bar" %>
   </div>
-  <div class="post_title">
-    <%= link_to "投稿", new_game_title_path, class: :game__title %>
-  </div>
-  <div class="card__wrapper">
-    <% @game_title.each do |game_title| %>
-    <div class="card">
-      <%= link_to image_tag(game_title.image, class: :card__img), game_title_path(game_title.id) %>
-      <div class="card__body">
-        <%= link_to game_title.game_title, game_title_path(game_title.id), class: :card__title %>
-      </div>
+  <div class="main">
+    <div class='title'>
+      <h1>ピックアップカテゴリー</h1>
     </div>
-    <% end %>
+    <div class="post_title">
+      <%= link_to "投稿", new_game_title_path, class: :game__title %>
+    </div>
+    <div class="card__wrapper">
+      <% @game_title.each do |game_title| %>
+      <div class="card">
+        <%= link_to image_tag(game_title.image, class: :card__img), game_title_path(game_title.id) %>
+        <div class="card__body">
+          <%= link_to game_title.game_title, game_title_path(game_title.id), class: :card__title %>
+        </div>
+      </div>
+      <% end %>
+    </div>
   </div>
-<%= render "shared/footer" %>
 </div>
-
+<%= render "shared/footer" %>
 
