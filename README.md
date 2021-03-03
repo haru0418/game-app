@@ -26,22 +26,22 @@
 
 ## 使用技術（開発環境）
 
-# バックエンド
+### バックエンド
 Ruby,　Ruby on Rails
 
-# フロントエンド
+### フロントエンド
 HTML, CSS
 
-# データベース
+### データベース
 MySQL, Sequel Pro
 
-# ソース管理
+### ソース管理
 GitHu, GitHub Desktop
 
-# テスト
+### テスト
 Rspec
 
-# エディタ
+### エディタ
 VSCode
 
 ## 課題今後実装したい機能
@@ -51,7 +51,7 @@ VSCode
  
 ## DB設計
 
-# usersテーブル
+### usersテーブル
 
 | Column                 |Type     |Options                    |
 |------------------------|---------|---------------------------|
@@ -59,13 +59,13 @@ VSCode
 | email                  | string  | null: false               |
 | encrypted_password     | string  | null: false               |
 
-# Association
+### Association
 - has_many :game_titles
 - has_many :comments
 - has_many :favorites, dependent: :destroy
 
 
-# game_titles テーブル
+### game_titles テーブル
 
 | Column                 |Type         |Options                    |
 |------------------------|-------------|---------------------------|
@@ -76,13 +76,13 @@ VSCode
 | user                   | references  | foreign_key: true         |
 
 
-# Association
+### Association
 - belongs_to :user
 - has_many :favorites, dependent: :destroy
 - has_many :comments, dependent: :destroy
   
   
-# comments テーブル
+### comments テーブル
 
 | Column                 |Type         |Options                    |
 |------------------------|-------------|---------------------------|
@@ -91,12 +91,12 @@ VSCode
 | game_title             | references  | foreign_key: true         |
 
 
-# Association
+### Association
 - belongs_to :user
 - belongs_to :game_title
 
 
-# users テーブル
+### users テーブル
 
 | Column                 |Type     |Options                    |
 |------------------------|---------|---------------------------|
@@ -105,6 +105,6 @@ VSCode
 
 
 
-# Association
+### Association
 - belongs_to :game_title
 - belongs_to :user
