@@ -17,6 +17,8 @@
 ## DEMO
 # トップページ
 ![02a5fc7fd83ff2cd16bb0c4f3632c5d8](https://user-images.githubusercontent.com/77143892/109898118-0cd48800-7cd7-11eb-9b61-eb38c3823f20.jpg)
+- ログインしたユーザーのみが投稿する事ができる
+- ログインしていなくても詳細画面には遷移できる
 
 # 詳細画面
 ![bb3a7b377822c1b5cf58c164f38b8b6b](https://user-images.githubusercontent.com/77143892/109900478-cbde7280-7cda-11eb-9a87-e9a9a41c51f2.jpg)
