@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="link-box">
     <% if user_signed_in? %>
     <% if current_user.already_favorited?(@game_title) %>
     <div class="evaluation">
@@ -58,30 +58,30 @@
     <% end %>
     <% end %>
     <div class="evaluation_count"><%= @game_title.favorites.count %></div>
-  </div>
+  
   
 
-  <div class="show-links">
-    <div class="show-link">
-      <%= link_to "ドスパラ", "https://www.dospara.co.jp/", :target=>["_blank"], class: :side_bar_name %>
-    </div>
-    <div class="show-link">
-      <%= link_to "マウスコンピューター", "https://www.mouse-jp.co.jp/", :target=>["_blank"], class: :side_bar_name %>
-    </div>
-    <div class="show-link">
-      <%= link_to "パソコン工房", "https://www.pc-koubou.jp/", :target=>["_blank"], class: :side_bar_name %>
-    </div>
-    <div class="show-link">
-      <%= link_to "YouTube", "https://www.youtube.com", :target=>["_blank"], class: :side_bar_name %>
-    </div>
-    <div class="show-link">
-      <%= link_to "Amazon", "https://www.amazon.co.jp", :target=>["_blank"], class: :side_bar_name %>
-    </div>
-    <div class="show-link">
-      <%= link_to "Twitter", "https://twitter.com", :target=>["_blank"], class: :side_bar_name %>
+    <div class="show-links">
+      <div class="show-link">
+        <%= link_to "ドスパラ", "https://www.dospara.co.jp/", :target=>["_blank"], class: :side_bar_name %>
+      </div>
+      <div class="show-link">
+        <%= link_to "マウスコンピューター", "https://www.mouse-jp.co.jp/", :target=>["_blank"], class: :side_bar_name %>
+      </div>
+      <div class="show-link">
+        <%= link_to "パソコン工房", "https://www.pc-koubou.jp/", :target=>["_blank"], class: :side_bar_name %>
+      </div>
+      <div class="show-link">
+        <%= link_to "YouTube", "https://www.youtube.com", :target=>["_blank"], class: :side_bar_name %>
+      </div>
+      <div class="show-link">
+        <%= link_to "Amazon", "https://www.amazon.co.jp", :target=>["_blank"], class: :side_bar_name %>
+      </div>
+      <div class="show-link">
+        <%= link_to "Twitter", "https://twitter.com", :target=>["_blank"], class: :side_bar_name %>
+      </div>
     </div>
   </div>
-
   <div class="game_title_comments">
     <% if user_signed_in? %>
     <%= form_with(model: [@game_title, @comment], local: true) do |f|%>

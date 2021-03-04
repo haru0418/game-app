@@ -1,7 +1,6 @@
 /* index */
 
 .item-contents {
-  background-color: #e6e6fa;
   height: 100%;
   display: flex;
   width: 100vw;
@@ -12,6 +11,7 @@
   padding-bottom: 60px;
   margin: 60px 3px 20px 60px;
   border-radius: 10px;
+  background-color: teal;
 }
 
 .main {
@@ -312,13 +312,15 @@
 .heading {
   font-size: 30px;
   border-radius: 10px 10px 0 0;
-  background-color: thistle;
+  background-color: #ffbc7a;
 }
 
 .game-description {
   word-wrap: break-word;
-  width: 80vw;
+  width: 100vw;
   font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .game-description-text {
@@ -369,6 +371,15 @@
   background-color: wheat;
   margin-right: 5px;
   border-radius: 10px;
+  border: 1px solid black;
+}
+
+.link-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px;
+  background-color: #e0e0e0;
+  padding-bottom: 10px;
 }
 
 /* /show */
