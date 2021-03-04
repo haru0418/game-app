@@ -48,13 +48,18 @@
   <div>
     <% if user_signed_in? %>
     <% if current_user.already_favorited?(@game_title) %>
-      <%= link_to 'いいねを外す', game_title_favorites_path(@game_title), method: :delete %>
+    <div class="evaluation">
+      <%= link_to 'いいね', game_title_favorites_path(@game_title), method: :delete, class: :evaluation_btn_delete %>
+    </div>
     <% else %>
-      <%= link_to 'イイね', game_title_favorites_path(@game_title), method: :post %>
+    <div class="evaluation">
+      <%= link_to 'いいね', game_title_favorites_path(@game_title), method: :post, class: :evaluation_btn_post %>
+    </div>
     <% end %>
     <% end %>
-    <%= @game_title.favorites.count %>
+    <div class="evaluation_count"><%= @game_title.favorites.count %></div>
   </div>
+  
 
   <div class="show-links">
     <div class="show-link">
