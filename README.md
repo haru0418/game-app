@@ -9,7 +9,11 @@
 - ユーザーの登録ができる
 
 ## 本番環境
-- まだしていない
+https://game-app-33967.herokuapp.com/
+
+ログイン情報（テスト用）
+Email：test@test
+Password：111111
 
 
 ## 制作背景（意図）
