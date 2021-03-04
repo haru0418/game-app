@@ -21,10 +21,8 @@
 # 詳細画面
 ![ab47fd5ff9cb4e1746f7d9dfce6181c6](https://user-images.githubusercontent.com/77143892/109898879-48238680-7cd8-11eb-8ab9-d99db6c40f94.jpg)
 
-#コメント機能
+# コメント機能
 ![15b657bd632e296d851a654e1bb69f70](https://user-images.githubusercontent.com/77143892/109899713-9dac6300-7cd9-11eb-8cb0-31d7f682a021.png)
-
-<img width="1169" alt="15b657bd632e296d851a654e1bb69f70" src="https://user-images.githubusercontent.com/77143892/109899713-9dac6300-7cd9-11eb-8cb0-31d7f682a021.png">
 
 
 
