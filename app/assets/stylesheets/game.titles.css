@@ -308,6 +308,38 @@
   justify-content: center;
 }
 
+.evaluation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.evaluation_btn_delete {
+  background-color: tomato;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.evaluation_btn_post {
+  background-color: teal;
+  color: wheat;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.evaluation_count {
+  text-align: center;
+  font-size: 30px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
 .show-links {
   display: flex;
   justify-content: center;
