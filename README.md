@@ -18,6 +18,9 @@
 # トップページ
 ![02a5fc7fd83ff2cd16bb0c4f3632c5d8](https://user-images.githubusercontent.com/77143892/109898118-0cd48800-7cd7-11eb-9b61-eb38c3823f20.jpg)
 
+# 詳細画面
+![ab47fd5ff9cb4e1746f7d9dfce6181c6](https://user-images.githubusercontent.com/77143892/109898879-48238680-7cd8-11eb-8ab9-d99db6c40f94.jpg)
+
 
 
 ## 工夫したポイント
