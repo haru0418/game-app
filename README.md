@@ -17,6 +17,9 @@
 ## DEMO
 # トップページ
 ![トップページ画像](02a5fc7fd83ff2cd16bb0c4f3632c5d8.jpg)
+![02a5fc7fd83ff2cd16bb0c4f3632c5d8](https://user-images.githubusercontent.com/77143892/109898118-0cd48800-7cd7-11eb-9b61-eb38c3823f20.jpg)
+
+
 
 ## 工夫したポイント
 - 投稿された記事にコメントができる
