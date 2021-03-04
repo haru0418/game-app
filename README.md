@@ -12,7 +12,7 @@
 https://game-app-33967.herokuapp.com/
 
 ログイン情報（テスト用）<br>
-Email：test@test <br>
+Email：test@test.com <br>
 Password：111111
 
 
