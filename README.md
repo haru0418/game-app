@@ -116,7 +116,7 @@ VSCode
 - belongs_to :game_title
 
 
-### users テーブル
+### favorites テーブル
 
 | Column                 |Type     |Options                    |
 |------------------------|---------|---------------------------|
